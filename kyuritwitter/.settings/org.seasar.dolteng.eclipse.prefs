@@ -1,0 +1,8 @@
+DaoType=S2JDBC
+DefaultResourcePath=/kyuritwitter/src/main/resources
+DefaultRootPackage=root
+DefaultSrcPath=/kyuritwitter/src/main/java
+ServletPath=/kyuritwitter
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp/
+eclipse.preferences.version=1

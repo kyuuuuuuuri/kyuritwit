@@ -1,0 +1,285 @@
+html, body {
+border : 0;
+margin : 0;
+padding : 0;
+}
+body {
+background : url(../img/bg.jpg) 0% 0% repeat #99a989;
+line-height : 130%;
+width : 100%;
+min-width : 970px;
+color : black;
+}
+a {
+color : #0099cc;
+text-decoration : none;
+}
+a:hover {
+color : #00ccff;
+}
+a img {
+border : none;
+}
+h1 {
+font-size : 1.6em;
+height : 20px;
+padding-top : 0;
+}
+h2 {
+font-size : 1.2em;
+height : 20px;
+padding-top : 0;
+}
+.highlight {
+background-color : #ff9d9d;
+border-bottom : 1px solid #f30;
+border-top : 1px solid #f30;
+padding : 4px 10px;
+}
+#container {
+width : 100%;
+height : 100%;
+text-align : center;
+}
+#content {
+width : 740px;
+margin : 0 auto;
+text-align : left;
+padding : 20px;
+}
+.clear {
+clear : both;
+height : 0;
+line-height : 0;
+}
+.clearfix:after {
+content : ".";
+display : block;
+height : 0;
+clear : both;
+visibility : hidden;
+}
+.clearfix {
+display : inline-block;
+}
+* html .clearfix {
+height : 1%;
+}
+.clearfix {
+display : block;
+}
+.clearfix {
+height : 1%;
+}
+.clearfix {
+display : block;
+}
+.tab {
+background : url(../img/tab_b.png) 0% 0% repeat-x;
+height : 42px;
+position : relative;
+top : 0;
+z-index : 999;
+}
+.tab ul.login {
+display : block;
+position : relative;
+float : right;
+clear : right;
+height : 42px;
+width : auto;
+font-weight : bold;
+line-height : 42px;
+margin : 0;
+right : 150px;
+color : white;
+font-size : 80%;
+text-align : center;
+}
+.tab ul.login li.left {
+background : url(../img/tab_l.png) 0% left no-repeat;
+height : 42px;
+width : 30px;
+padding : 0;
+margin : 0;
+display : block;
+float : left;
+}
+.tab ul.login li.right {
+background : url(../img/tab_r.png) 0% left no-repeat;
+height : 42px;
+width : 30px;
+padding : 0;
+margin : 0;
+display : block;
+float : left;
+}
+.tab ul.login li {
+text-align : left;
+padding : 0 6px;
+display : block;
+float : left;
+height : 42px;
+background : url(../img/tab_m.png) 0% 0% repeat-x;
+}
+.tab ul.login li a {
+color : #15adff;
+}
+.tab ul.login li a:hover {
+color : white;
+}
+.tab .sep {
+color : #414141;
+}
+.tab a.open, .tab a.close {
+height : 20px;
+line-height : 20px !important ;
+padding-left : 30px !important ;
+cursor : pointer;
+display : block;
+width : 100px;
+position : relative;
+top : 11px;
+}
+.tab a.open {
+background : url(../img/bt_open.png) 0% left no-repeat;
+}
+.tab a.close {
+background : url(../img/bt_close.png) 0% left no-repeat;
+}
+.tab a:hover.open {
+background : url(../img/bt_open.png) -19px left no-repeat;
+}
+.tab a:hover.close {
+background : url(../img/bt_close.png) -19px left no-repeat;
+}
+#toppanel {
+position : fixed;
+top : 0;
+left: 500px;
+width : 400px;
+z-index : 999;
+text-align : center;
+margin-left : auto;
+margin-right : auto;
+}
+#panel {
+width : 100%;
+height : 270px;
+color : #999999;
+background : #272727;
+overflow : hidden;
+position : relative;
+z-index : 3;
+display : none;
+}
+#panel h1 {
+font-size : 1.6em;
+padding : 5px 0 10px;
+margin : 0;
+color : white;
+}
+#panel h2 {
+font-size : 1.2em;
+padding : 10px 0 5px;
+margin : 0;
+color : white;
+}
+#panel p {
+margin : 5px 0;
+padding : 0;
+}
+#panel a {
+text-decoration : none;
+color : #15adff;
+}
+#panel a:hover {
+color : white;
+}
+#panel a-lost-pwd {
+display : block;
+float : left;
+}
+#panel .content {
+width : 960px;
+margin : 0 auto;
+padding-top : 15px;
+text-align : left;
+font-size : 0.85em;
+}
+#panel .content .left {
+width : 280px;
+float : left;
+padding : 0 15px;
+border-left : 1px solid #333;
+}
+#panel .content .right {
+border-right : 1px solid #333;
+}
+#panel .content form {
+margin : 0 0 10px 0;
+}
+#panel .content label {
+float : left;
+padding-top : 8px;
+clear : both;
+width : 280px;
+display : block;
+}
+#panel .content input.field {
+border : #1a1a1a solid 1px;
+background : #414141;
+margin-right : 5px;
+margin-top : 4px;
+width : 200px;
+color : white;
+height : 16px;
+}
+#panel .content input:focus.field {
+background : #545454;
+}
+#panel .content input.bt_login, #panel .content input.bt_register {
+display : block;
+float : left;
+clear : left;
+height : 24px;
+text-align : center;
+cursor : pointer;
+border : none;
+font-weight : bold;
+margin : 10px 0;
+}
+#panel .content input.bt_login {
+width : 74px;
+background : url(../img/bt_login.png) 0% 0% no-repeat transparent;
+}
+#panel .content input.bt_register {
+width : 94px;
+color : white;
+background : url(../img/bt_register.png) 0% 0% no-repeat transparent;
+}
+#panel .lost-pwd {
+display : block;
+float : left;
+clear : right;
+padding : 15px 5px 0;
+font-size : 0.95em;
+text-decoration : underline;
+}
+#user_reg{
+	overflow : hidden;
+	display:none;
+}
+.w1{
+	display:block;
+	float:left;
+	width:100px;
+}
+label.w1{
+	clear:both;
+}
+
+#toggle a{
+	font-size:1.2em;
+	margin : 40px 40px 40px 40px;
+}

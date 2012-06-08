@@ -1,0 +1,71 @@
+<!--homepagebodyのレイアウト-->
+body {
+}
+
+<!--mainpageテーブルレイアウト-->
+#table-main{
+border:1px #f0f8ff solid;
+border-collapse:collapse;
+border-spacing:0;
+}
+#table-main th,#table-main td{
+	border:1px #f0f8ff solid;
+}
+#table-main th{
+	padding:5px;
+	border:1px #f0f8ff solid;
+	text-align:center;
+}
+#table-main td{
+	width:500px;
+	padding:5px;
+	border-wicth:0 0 1px 1px;
+}
+<!--mainpageつぶやき枠レイアウト-->
+input.input_style{
+	width:100%;
+	height:3em;
+}
+input.input_button{
+	width:7em;
+	height:3em;
+}
+
+<!--吹き出しCSS-->
+#balloon {
+	position: absolute;
+	/* width: 200px; */
+}
+#balloon-p1 {
+	border-top: solid 9px transparent;
+	border-right: solid 5px #fff;
+	margin-left: 40px;
+	float: left;
+	width: 0; height: 0;
+}
+#balloon-p2 {
+	border-top: solid 9px transparent;
+	border-left: solid 5px #fff;
+	float: left;
+	width: 0; height: 0;
+}
+#balloon-c {
+	background-color: #fff;
+	padding: 20px;
+	margin : 30px ;
+	clear: left;
+}
+
+<!--パスワード強度用-->
+#psContainer{
+	height:18px;
+	width:100px;
+	border:1px solid #000;
+	background-color:#DDDDDD;
+}
+
+#psStrength{
+	background-image:url('../img/strength.jpg');
+	height:18px;
+	width:0px;
+}
