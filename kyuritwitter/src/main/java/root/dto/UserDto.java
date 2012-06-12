@@ -9,7 +9,14 @@ import org.seasar.framework.container.annotation.tiger.InstanceType;
 public class UserDto implements Serializable{
 	private static final long serialVersionUID = 1L;
 
-	public Integer userID;
+	public Integer userID=null;
 
+	public boolean isLogin(){
+		if(userID!=null){
+		return true;
+	}else{
+		return false;
+	}
+	}
 }
 
