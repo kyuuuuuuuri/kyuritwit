@@ -8,6 +8,4 @@
   <include path="s2jdbc.dicon"/>
   <component name="actionMessagesThrowsInterceptor" class="org.seasar.struts.interceptor.ActionMessagesThrowsInterceptor"/>
 
-  <component name="userDto" class="root.dto.UserDto" instance="session" />
-
 </components>

@@ -25,14 +25,14 @@
 
     <action-mappings>
     </action-mappings>
-    
+
 
 <!-- ===================================== Controller Configuration -->
 
     <controller
         maxFileSize="1024K"
         bufferSize="1024"
-        processorClass="org.seasar.struts.action.S2RequestProcessor"
+        processorClass="root.util.S2RequestProcessor"
         multipartClass="org.seasar.struts.upload.S2MultipartRequestHandler"/>
 
 
