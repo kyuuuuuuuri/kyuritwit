@@ -117,7 +117,7 @@ ${tubuyaki.tuser.usernick}</span></s:link>
 
 <td>${mydata.follow }<br><s:link href="/followlist/followpage/${mydata.userid}" style="text-decoration: none">フォロー<br>している</s:link></td>
 <td>${mydata.followed }<br><s:link href="/followlist/followedlist/${mydata.userid}" style="text-decoration: none">フォロー<br>されている</s:link></td>
-<td>${mydata.postNum }<br><s:link href="showdata/${mydata.usernick}" style="text-decoration: none">投稿数</s:link></td>
+<td>${mydata.postNum }<br><s:link href="showdata/${mydata.userid}" style="text-decoration: none">投稿数</s:link></td>
 
 </tr>
 </table>

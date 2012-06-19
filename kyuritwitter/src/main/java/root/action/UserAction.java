@@ -1,33 +1,24 @@
 package root.action;
 
 import javax.annotation.Resource;
-import org.seasar.extension.jdbc.JdbcManager;
+
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.exception.ActionMessagesException;
-import org.seasar.struts.util.ResponseUtil;
-import org.seasar.framework.container.SingletonS2Container;
-
 
 import root.entity.Tuser;
 import root.form.UserForm;
-//import root.dto.TuserDto;
-import root.dto.UserDto;;
+
+import root.SuperAction;
 
 
-public class UserAction {
+public class UserAction extends SuperAction{
+
+	@ActionForm
+	@Resource
+	public UserForm userForm;
 
     private final String userIndexJsp = "userInput.jsp";
-
-    @ActionForm
-    @Resource
-    protected UserForm userForm;
-
-    @Resource
-    UserDto userDto;
-
-    //JdbcManagerのインスタンスを取得
-    JdbcManager jdbcManager=SingletonS2Container.getComponent("jdbcManager");
 
     public int mine=0;
 
@@ -35,14 +26,6 @@ public class UserAction {
     public String index() {
     	return "index.jsp";
     }
-
-    public String greeting="a";
-	@Execute(validator = false)
-	public String hello() {
-		System.out.println("きゅうり"+ greeting);
-	    ResponseUtil.write(greeting);
-	    return null;
-	}
 
     //jspファイルに渡すtuser
     public Tuser tuser = new Tuser();
@@ -55,13 +38,8 @@ public class UserAction {
     	String userNick = userForm.userNick;
     	String userName = userForm.userName;
 
-
     	//すでに使われているユーザ名なのか検索
-    	Tuser result =
-    		jdbcManager
-    		.from(Tuser.class)
-    		.where("userNick = ?", userNick)
-    		.getSingleResult();
+    	Tuser result =tuserService.findByName(userNick);
 
     	//登録済みかユーザチェック
     	if(result!=null){
@@ -80,12 +58,11 @@ public class UserAction {
     	tuser.followed=0;
     	tuser.skey=0;
     	tuser.postNum=0;
-    	jdbcManager.insert(tuser).execute();
+    	tuserService.insert(tuser);
 
     	return "entrypage.jsp";
 
 	}
-
 
 	//エントリーページへ遷移する
 	@Execute(validator=false)
@@ -99,12 +76,4 @@ public class UserAction {
 		return "../login/index.jsp";
 	}
 
-	//ログアウト
-	@Execute(validator=false)
-	public String logout(){
-
-		userDto.userID=null;
-
-		return "/login/";
-	}
 }

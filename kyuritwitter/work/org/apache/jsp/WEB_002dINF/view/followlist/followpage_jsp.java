@@ -318,7 +318,7 @@ public final class followpage_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f0 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
     _jspx_th_s_005flink_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005flink_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    _jspx_th_s_005flink_005f0.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${followList.userid}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_s_005flink_005f0.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${followList.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     _jspx_th_s_005flink_005f0.setStyle("text-decoration: none");
     int _jspx_eval_s_005flink_005f0 = _jspx_th_s_005flink_005f0.doStartTag();
     if (_jspx_eval_s_005flink_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -514,7 +514,7 @@ public final class followpage_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f4 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
     _jspx_th_s_005flink_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005flink_005f4.setParent(null);
-    _jspx_th_s_005flink_005f4.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${mydata.userid}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_s_005flink_005f4.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${mydata.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     _jspx_th_s_005flink_005f4.setStyle("text-decoration: none");
     int _jspx_eval_s_005flink_005f4 = _jspx_th_s_005flink_005f4.doStartTag();
     if (_jspx_eval_s_005flink_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {

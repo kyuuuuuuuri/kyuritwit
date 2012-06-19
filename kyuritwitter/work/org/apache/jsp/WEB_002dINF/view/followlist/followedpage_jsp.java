@@ -86,7 +86,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n");
-      out.write("<title>フォロワ―ページ</title>\r\n");
+      out.write("<title>followerPage</title>\r\n");
       out.write("<link rel=\"Stylesheet\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/css/cssfile.css\" />\r\n");
@@ -97,9 +97,8 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       if (_jspx_meth_tiles_005finsert_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("</head>\r\n");
+      out.write("\r\n");
       out.write("<body>\r\n");
       out.write("<div id=\"baroon\">\r\n");
       out.write("<div id=\"balloon-p1\"></div>\r\n");
@@ -110,7 +109,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.username }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write('は');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("人にフォローされています。</font>\r\n");
+      out.write("人にフォローされています</font>\r\n");
       out.write("\r\n");
       out.write("<br><br><br>\r\n");
       out.write("\r\n");
@@ -129,13 +128,13 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("</tr>\r\n");
       out.write("<tr>\r\n");
       out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.follow }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.follow }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("<br>");
       if (_jspx_meth_s_005flink_005f2(_jspx_page_context))
         return;
       out.write("</td>\r\n");
       out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("<br>");
       if (_jspx_meth_s_005flink_005f3(_jspx_page_context))
         return;
@@ -143,9 +142,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("</tr>\r\n");
       out.write("<tr>\r\n");
       out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.postNum }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write('　');
-      out.write('　');
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.postNum }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       if (_jspx_meth_s_005flink_005f4(_jspx_page_context))
         return;
       out.write("</td>\r\n");
@@ -292,7 +289,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
             return true;
           out.write("</font>\r\n");
           out.write("<br>\r\n");
-          out.write("<!-- ユーザがすでにフォローしているのかを検証する -->\r\n");
+          out.write("<!-- -->\r\n");
           if (_jspx_meth_c_005fset_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
           out.write('\r');
@@ -330,7 +327,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f0 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
     _jspx_th_s_005flink_005f0.setPageContext(_jspx_page_context);
     _jspx_th_s_005flink_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    _jspx_th_s_005flink_005f0.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${followed.userid}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_s_005flink_005f0.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${followed.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     _jspx_th_s_005flink_005f0.setStyle("text-decoration: none");
     int _jspx_eval_s_005flink_005f0 = _jspx_th_s_005flink_005f0.doStartTag();
     if (_jspx_eval_s_005flink_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -694,7 +691,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f4 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
     _jspx_th_s_005flink_005f4.setPageContext(_jspx_page_context);
     _jspx_th_s_005flink_005f4.setParent(null);
-    _jspx_th_s_005flink_005f4.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${mydata.userid}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_s_005flink_005f4.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${mydata.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     _jspx_th_s_005flink_005f4.setStyle("text-decoration: none");
     int _jspx_eval_s_005flink_005f4 = _jspx_th_s_005flink_005f4.doStartTag();
     if (_jspx_eval_s_005flink_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {

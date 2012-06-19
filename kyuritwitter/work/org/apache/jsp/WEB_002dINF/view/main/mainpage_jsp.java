@@ -411,9 +411,10 @@ static {
           out.write("\r\n");
           out.write("\r\n");
           out.write("<div id=\"twitmain\" >\r\n");
+          out.write("<!--");
           if (_jspx_meth_c_005fout_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\r\n");
+          out.write("-->\r\n");
           out.write("<font size=\"4\">\r\n");
           if (_jspx_meth_s_005flink_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
@@ -792,7 +793,7 @@ static {
     org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f5 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
     _jspx_th_s_005flink_005f5.setPageContext(_jspx_page_context);
     _jspx_th_s_005flink_005f5.setParent(null);
-    _jspx_th_s_005flink_005f5.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("showdata/${mydata.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    _jspx_th_s_005flink_005f5.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("showdata/${mydata.userid}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
     _jspx_th_s_005flink_005f5.setStyle("text-decoration: none");
     int _jspx_eval_s_005flink_005f5 = _jspx_th_s_005flink_005f5.doStartTag();
     if (_jspx_eval_s_005flink_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {

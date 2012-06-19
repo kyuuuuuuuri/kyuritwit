@@ -11,12 +11,5 @@ public class UserDto implements Serializable{
 
 	public Integer userID=null;
 
-	public boolean isLogin(){
-		if(userID!=null){
-		return true;
-	}else{
-		return false;
-	}
-	}
 }
 

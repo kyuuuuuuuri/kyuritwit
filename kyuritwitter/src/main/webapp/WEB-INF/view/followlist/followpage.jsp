@@ -33,7 +33,7 @@
 
 <tr>
 <td>
-<s:link href="/main/showdata/${followList.userid}" style="text-decoration: none"> ${followList.usernick} </s:link>
+<s:link href="/main/showdata/${followList.usernick}" style="text-decoration: none"> ${followList.usernick} </s:link>
 <br>
 ${followList.newMur}
 <font color=#808080 size="2"><fmt:formatDate value="${followList.newMurD}" pattern="yyyy年MM月dd日 HH時mm分ss秒" /></font>
@@ -60,7 +60,7 @@ ${followList.newMur}
 <td>${mydata.followed }<br><s:link href="followedlist/${mydata.userid }"style="text-decoration: none">フォロー<br>されている</s:link></td>
 </tr>
 <tr>
-<td>${mydata.postNum }　　<s:link href="/main/showdata/${mydata.userid}"style="text-decoration: none">投稿数</s:link></td>
+<td>${mydata.postNum }　　<s:link href="/main/showdata/${mydata.usernick}"style="text-decoration: none">投稿数</s:link></td>
 </tr>
 </table>
 

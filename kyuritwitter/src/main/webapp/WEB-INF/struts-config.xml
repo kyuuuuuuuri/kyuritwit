@@ -32,7 +32,7 @@
     <controller
         maxFileSize="1024K"
         bufferSize="1024"
-        processorClass="root.util.S2RequestProcessor"
+        processorClass="org.seasar.struts.action.S2RequestProcessor"
         multipartClass="org.seasar.struts.upload.S2MultipartRequestHandler"/>
 
 

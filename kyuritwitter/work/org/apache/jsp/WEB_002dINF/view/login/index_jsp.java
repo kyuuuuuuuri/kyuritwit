@@ -108,9 +108,12 @@ static {
       out.write("<div id=\"balloon-p1\"></div>\r\n");
       out.write("\t<div id=\"balloon-p2\"></div>\r\n");
       out.write("\t<div id=\"balloon-c\">\r\n");
-      out.write("<span id=\"message\"></span><br />\r\n");
+      out.write("\r\n");
+      out.write("<!-- <span id=\"message\"></span><br />\r\n");
       out.write("<input type=\"button\" value=\"hello\"\r\n");
       out.write("    onclick=\"$('#message').load('hello',{'greeting':'Hello'});\"/>\r\n");
+      out.write("    -->\r\n");
+      out.write("\r\n");
       out.write("<h2>ログイン</h2>\r\n");
       out.write("<br>\r\n");
       if (_jspx_meth_s_005fform_005f0(_jspx_page_context))

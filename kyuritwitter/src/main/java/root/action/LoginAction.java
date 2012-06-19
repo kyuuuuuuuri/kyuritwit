@@ -2,36 +2,26 @@ package root.action;
 
 import javax.annotation.Resource;
 
-import org.seasar.extension.jdbc.JdbcManager;
-import org.seasar.framework.container.SingletonS2Container;
 import org.seasar.struts.annotation.ActionForm;
 import org.seasar.struts.annotation.Execute;
 import org.seasar.struts.exception.ActionMessagesException;
-import org.seasar.struts.util.ResponseUtil;
 
-import root.dto.UserDto;
 import root.entity.Tuser;
 import root.form.LoginForm;
-//import root.form.UserForm;
 
-public class LoginAction {
+import root.SuperAction;
 
-	//private final String loginPageJsp = "loginpage.jsp";
+
+public class LoginAction extends SuperAction{
 
 	@ActionForm
 	@Resource
-	protected LoginForm loginform;
-	@ActionForm
-	//@Resource
-	//protected UserForm userform;
-	@Resource
-	protected UserDto userDto;
+	protected LoginForm loginForm;
 
 	public String greeting;
 
-	JdbcManager jdbcManager=SingletonS2Container.getComponent("jdbcManager");
-
 	public int mine=0;
+
     @Execute(validator = false)
 	public String index() {
 
@@ -47,15 +37,11 @@ public class LoginAction {
 			return "/main/";
 		}
 
-    	String userName=loginform.UserName;
-    	String pass=loginform.Pass;
+    	String userName=loginForm.UserName;
+    	String pass=loginForm.Pass;
 
     	//ユーザが存在するか検証
-    	Tuser result =
-    		jdbcManager
-    		.from(Tuser.class)
-    		.where("usernick = ?", userName)
-    		.getSingleResult();
+    	Tuser result =tuserService.findByName(userName);
 
     	if(result==null || (!pass.equals(result.passWord))){//ユーザ名が登録されていなかったら…
     		throw new ActionMessagesException("パスワードとユーザ名が一致しません",false);
@@ -63,8 +49,6 @@ public class LoginAction {
 
     	//ユーザＩＤをセッション登録する
     	userDto.userID=result.userid;
-    	//Beans.copy(result.userid, userDto).execute();
-
 
 		return "/main?redirect=true";
     }
@@ -72,13 +56,13 @@ public class LoginAction {
     //ユーザ新規登録するページへの遷移
     @Execute(validator=false)
     public String userentry(){
-
     	return "/user/";
     }
+
     //mainpageへ移動する
     @Execute(validator=false)
     public String tomain(){
-    	int mine=0;
+    	//int mine=0;
     	if(userDto.userID!=null){
     	int userid=userDto.userID;
     	mine=userid;
@@ -94,9 +78,6 @@ public class LoginAction {
 	//ログインページへ移動する
 	@Execute(validator=false)
 	public String tologin(){
-
 		return "index";
 	}
-
-
 }
