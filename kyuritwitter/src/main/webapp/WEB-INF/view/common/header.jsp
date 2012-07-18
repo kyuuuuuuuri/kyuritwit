@@ -1,18 +1,12 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ヘッダーページ</title>
-<style type="text/css">
-body {
-background:#C0DEED;
-}
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
 
-</style>
 </head>
 <body>
 <font size="6">
 <s:link href="/main/main"><img src="${f:url('/img/twitter.jpg')}"></s:link>
-</font>　　　　　　　
+</font>
 <c:if test="${ mine == 0 }">
 
 <s:link href="/main/">ホーム</s:link>

@@ -22,14 +22,10 @@ public class FollowlistAction extends SuperAction{
 	@Resource
 	protected FollowlistForm followlistForm;
 
-	public Tuser tuser;
-
-	public Tuser mydata = new Tuser();
 
     public List<Tuser> followList= new ArrayList<Tuser>();
     public List<Tuser> followedList = new ArrayList<Tuser>();
     public int followCheck;
-    public int mine;
     public List<Integer> fc_userid=new ArrayList<Integer>();
     public long followcheckcount=0;
 

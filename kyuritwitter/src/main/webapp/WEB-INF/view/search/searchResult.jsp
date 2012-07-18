@@ -1,18 +1,6 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>サーチリザルトのページ</title>
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-<tiles:insert page="/WEB-INF/view/common/header.jsp"  />
-
-</head>
-<body>
-<div id="baroon">
-<div id="balloon-p1"></div>
-	<div id="balloon-p2"></div>
-	<div id="balloon-c">
-<br>
+<tiles:insert template="/WEB-INF/view/common/layout.jsp" flush="true">
+<tiles:put name="title" value="followpage" />
+<tiles:put name="content" type="string">
 
 ${search}の検索結果<br>
 
@@ -21,14 +9,12 @@ ${search}の検索結果<br>
 </c:if>
 
 
-
 <c:if test="${!empty searchUser}">
 <table id="table-main">
 
 <c:forEach var="search" items="${searchUser}">
 
-<tr>
-<td>
+<tr><td>
 <s:link href="/main/showdata/${search.userid}"> ${search.usernick} </s:link>
 <br>
 
@@ -58,18 +44,8 @@ ${search.newMur }
 
 </c:forEach>
 
-</table>
+</table></c:if>
 
-<c:if test="${hasPrev}">
-	<a href="?page=${page-1 }">&lt;前へ</a>
-</c:if>
-<c:if test="${hasNext}">
-	<a href="?page=${page+1 }">次へ&gt;</a>
-</c:if>
-
-</c:if>
-</div>
-</div>
-</body>
-</html>
+</tiles:put>
+</tiles:insert>
 

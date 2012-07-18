@@ -1,27 +1,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script type="text/javascript" src="${f:url('/js/jquery.js')}"></script>
 
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
 <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/loginStyle.css" />
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 
-<title>loginページ</title>
 <tiles:insert page="/WEB-INF/view/common/header.jsp"  />
 
+
+<title>login</title>
 </head>
 <body>
 <div id="baroon">
 <div id="balloon-p1"></div>
 	<div id="balloon-p2"></div>
 	<div id="balloon-c">
-
-<!-- <span id="message"></span><br />
-<input type="button" value="hello"
-    onclick="$('#message').load('hello',{'greeting':'Hello'});"/>
-    -->
-
 <h2>ログイン</h2>
 <br>
 <s:form>

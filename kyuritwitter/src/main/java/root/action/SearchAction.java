@@ -25,7 +25,6 @@ public class SearchAction extends SuperAction{
 
     public int followCheck;
 
-	public int mine;
 	public long followcheckcount=0;
 	public List<Integer> fc_userid = new ArrayList<Integer>();
 	public String search;
@@ -43,6 +42,8 @@ public class SearchAction extends SuperAction{
 	public String searchSubmit() {
     	int userid=userDto.userID;
     	mine=userid;
+
+    	mydata =tuserService.findById(mine);
 
     	//ページ番号を取得
     	int page = IntegerConversionUtil.toPrimitiveInt(this.searchForm.page);
@@ -87,6 +88,8 @@ public class SearchAction extends SuperAction{
     public String infollow(){
 
     	int userid= userDto.userID;
+
+    	mydata =tuserService.findById(userid);
 
     	//すでにフォローしていたら何もしない
     	Follow fol = followService.delFollow(searchForm.userid, userid);

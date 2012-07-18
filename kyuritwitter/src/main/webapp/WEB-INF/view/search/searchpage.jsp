@@ -2,9 +2,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>検索ページ</title>
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 <tiles:insert page="/WEB-INF/view/common/header.jsp"  />
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
 
 <style type="text/css">
 input.style{

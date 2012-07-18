@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script type="text/javascript" src="${f:url('/js/jquery.js')}"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/main.js"></script>">
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/main.js"></script>
 
 <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
 <link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
@@ -15,10 +15,13 @@ height:6em;
 }
 </style>
 
-<tiles:insert page="/WEB-INF/view/common/header.jsp"  />
+<!--<tiles:insert page="/WEB-INF/view/common/header.jsp"  />-->
 <title>メインページ</title>
 </head>
 <body>
+<tiles:insert template="/WEB-INF/view/common/layout.jsp" flush="true">
+<tiles:put name="title" value="followedpage" />
+<tiles:put name="content" type="string">
 <br>
 <!-- 吹き出し -->
 <div id="baroon">
@@ -106,30 +109,9 @@ ${tubuyaki.tuser.usernick}</span></s:link>
 
 </c:if>
 
-<!-- ***********ユーザデータ*********** -->
-<table>
-<tr>
-<td colspan="3"><h3>${mydata.usernick }</h3></td>
-</tr>
-
-<!-- ユーザ情報 -->
-<tr>
-
-<td>${mydata.follow }<br><s:link href="/followlist/followpage/${mydata.userid}" style="text-decoration: none">フォロー<br>している</s:link></td>
-<td>${mydata.followed }<br><s:link href="/followlist/followedlist/${mydata.userid}" style="text-decoration: none">フォロー<br>されている</s:link></td>
-<td>${mydata.postNum }<br><s:link href="showdata/${mydata.userid}" style="text-decoration: none">投稿数</s:link></td>
-
-</tr>
-</table>
-<!-- ***********ページング*********** -->
-<br clear="left">
-<c:if test="${hasPrev}">
-	<a href="?page=${page-1 }">&lt;前へ</a>
-</c:if>
-<c:if test="${hasNext}">
-	<a href="?page=${page+1 }">次へ&gt;</a>
-</c:if>
 </div>
 </div>
+</tiles:put>
+</tiles:insert>
 </body>
 </html>

@@ -14,7 +14,9 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     _jspx_dependants.add("/WEB-INF/view/common/common.jsp");
   }
 
-  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fif_0026_005ftest;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref;
@@ -28,7 +30,9 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
   }
 
   public void _jspInit() {
-    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fif_0026_005ftest = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -39,7 +43,9 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
   }
 
   public void _jspDestroy() {
-    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody.release();
+    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush.release();
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody.release();
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname.release();
     _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.release();
     _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.release();
@@ -83,85 +89,10 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("  \r\n");
       out.write("\r\n");
       out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("<head>\r\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n");
-      out.write("<title>followerPage</title>\r\n");
-      out.write("<link rel=\"Stylesheet\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/css/cssfile.css\" />\r\n");
-      out.write("<link rel=\"Stylesheet\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/css/style.css\" />\r\n");
-      out.write("\r\n");
       if (_jspx_meth_tiles_005finsert_005f0(_jspx_page_context))
-        return;
-      out.write("\r\n");
-      out.write("</head>\r\n");
-      out.write("\r\n");
-      out.write("<body>\r\n");
-      out.write("<div id=\"baroon\">\r\n");
-      out.write("<div id=\"balloon-p1\"></div>\r\n");
-      out.write("\t<div id=\"balloon-p2\"></div>\r\n");
-      out.write("\t<div id=\"balloon-c\">\r\n");
-      out.write("\r\n");
-      out.write("<font size=\"4\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.username }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write('は');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("人にフォローされています</font>\r\n");
-      out.write("\r\n");
-      out.write("<br><br><br>\r\n");
-      out.write("\r\n");
-      if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
-        return;
-      out.write("\r\n");
-      out.write("\r\n");
-      if (_jspx_meth_c_005fif_005f1(_jspx_page_context))
-        return;
-      out.write("\r\n");
-      out.write("<table border=\"0\">\r\n");
-      out.write("<tr>\r\n");
-      out.write("<td colspan=\"3\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.usernick }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("</td>\r\n");
-      out.write("</tr>\r\n");
-      out.write("<tr>\r\n");
-      out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.follow }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("<br>");
-      if (_jspx_meth_s_005flink_005f2(_jspx_page_context))
-        return;
-      out.write("</td>\r\n");
-      out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("<br>");
-      if (_jspx_meth_s_005flink_005f3(_jspx_page_context))
-        return;
-      out.write("</td>\r\n");
-      out.write("</tr>\r\n");
-      out.write("<tr>\r\n");
-      out.write("<td>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mydata.postNum }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      if (_jspx_meth_s_005flink_005f4(_jspx_page_context))
-        return;
-      out.write("</td>\r\n");
-      out.write("</tr>\r\n");
-      out.write("</table>\r\n");
-      out.write("\r\n");
-      out.write("<br clear=\"left\">\r\n");
-      out.write("\r\n");
-      if (_jspx_meth_c_005fif_005f5(_jspx_page_context))
         return;
       out.write('\r');
       out.write('\n');
-      if (_jspx_meth_c_005fif_005f6(_jspx_page_context))
-        return;
-      out.write("\r\n");
-      out.write("</div>\r\n");
-      out.write("</div>\r\n");
-      out.write("</body>\r\n");
-      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
@@ -179,39 +110,123 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  tiles:insert
-    org.apache.struts.taglib.tiles.InsertTag _jspx_th_tiles_005finsert_005f0 = (org.apache.struts.taglib.tiles.InsertTag) _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody.get(org.apache.struts.taglib.tiles.InsertTag.class);
+    org.apache.struts.taglib.tiles.InsertTag _jspx_th_tiles_005finsert_005f0 = (org.apache.struts.taglib.tiles.InsertTag) _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush.get(org.apache.struts.taglib.tiles.InsertTag.class);
     _jspx_th_tiles_005finsert_005f0.setPageContext(_jspx_page_context);
     _jspx_th_tiles_005finsert_005f0.setParent(null);
-    _jspx_th_tiles_005finsert_005f0.setPage("/WEB-INF/view/common/header.jsp");
+    _jspx_th_tiles_005finsert_005f0.setTemplate("/WEB-INF/view/common/layout.jsp");
+    _jspx_th_tiles_005finsert_005f0.setFlush(true);
     int _jspx_eval_tiles_005finsert_005f0 = _jspx_th_tiles_005finsert_005f0.doStartTag();
+    if (_jspx_eval_tiles_005finsert_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write('\r');
+        out.write('\n');
+        if (_jspx_meth_tiles_005fput_005f0(_jspx_th_tiles_005finsert_005f0, _jspx_page_context))
+          return true;
+        out.write('\r');
+        out.write('\n');
+        if (_jspx_meth_tiles_005fput_005f1(_jspx_th_tiles_005finsert_005f0, _jspx_page_context))
+          return true;
+        out.write('\r');
+        out.write('\n');
+        int evalDoAfterBody = _jspx_th_tiles_005finsert_005f0.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+    }
     if (_jspx_th_tiles_005finsert_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody.reuse(_jspx_th_tiles_005finsert_005f0);
+      _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush.reuse(_jspx_th_tiles_005finsert_005f0);
       return true;
     }
-    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005fpage_005fnobody.reuse(_jspx_th_tiles_005finsert_005f0);
+    _005fjspx_005ftagPool_005ftiles_005finsert_0026_005ftemplate_005fflush.reuse(_jspx_th_tiles_005finsert_005f0);
     return false;
   }
 
-  private boolean _jspx_meth_c_005fif_005f0(PageContext _jspx_page_context)
+  private boolean _jspx_meth_tiles_005fput_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_tiles_005finsert_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  tiles:put
+    org.apache.struts.taglib.tiles.PutTag _jspx_th_tiles_005fput_005f0 = (org.apache.struts.taglib.tiles.PutTag) _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody.get(org.apache.struts.taglib.tiles.PutTag.class);
+    _jspx_th_tiles_005fput_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_tiles_005fput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_tiles_005finsert_005f0);
+    _jspx_th_tiles_005fput_005f0.setName("title");
+    _jspx_th_tiles_005fput_005f0.setValue("followedpage");
+    int _jspx_eval_tiles_005fput_005f0 = _jspx_th_tiles_005fput_005f0.doStartTag();
+    if (_jspx_th_tiles_005fput_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody.reuse(_jspx_th_tiles_005fput_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005fvalue_005fname_005fnobody.reuse(_jspx_th_tiles_005fput_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_tiles_005fput_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_tiles_005finsert_005f0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  tiles:put
+    org.apache.struts.taglib.tiles.PutTag _jspx_th_tiles_005fput_005f1 = (org.apache.struts.taglib.tiles.PutTag) _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname.get(org.apache.struts.taglib.tiles.PutTag.class);
+    _jspx_th_tiles_005fput_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_tiles_005fput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_tiles_005finsert_005f0);
+    _jspx_th_tiles_005fput_005f1.setName("content");
+    _jspx_th_tiles_005fput_005f1.setType("string");
+    int _jspx_eval_tiles_005fput_005f1 = _jspx_th_tiles_005fput_005f1.doStartTag();
+    if (_jspx_eval_tiles_005fput_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      if (_jspx_eval_tiles_005fput_005f1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.pushBody();
+        _jspx_th_tiles_005fput_005f1.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
+        _jspx_th_tiles_005fput_005f1.doInitBody();
+      }
+      do {
+        out.write("\r\n");
+        out.write("\r\n");
+        out.write("<div style=\"margin:10px 0px 25px 10px\">\r\n");
+        out.write("<font size=\"4\">");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.username }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+        out.write('は');
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${mydata.followed }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+        out.write("人にフォローされています</font>\r\n");
+        out.write("</div>\r\n");
+        out.write("\r\n");
+        if (_jspx_meth_c_005fif_005f0(_jspx_th_tiles_005fput_005f1, _jspx_page_context))
+          return true;
+        out.write("\r\n");
+        out.write("\r\n");
+        if (_jspx_meth_c_005fif_005f1(_jspx_th_tiles_005fput_005f1, _jspx_page_context))
+          return true;
+        out.write("\r\n");
+        out.write("\r\n");
+        int evalDoAfterBody = _jspx_th_tiles_005fput_005f1.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+      if (_jspx_eval_tiles_005fput_005f1 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
+        out = _jspx_page_context.popBody();
+      }
+    }
+    if (_jspx_th_tiles_005fput_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname.reuse(_jspx_th_tiles_005fput_005f1);
+      return true;
+    }
+    _005fjspx_005ftagPool_005ftiles_005fput_0026_005ftype_005fname.reuse(_jspx_th_tiles_005fput_005f1);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fif_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_tiles_005fput_005f1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  c:if
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f0.setParent(null);
+    _jspx_th_c_005fif_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_tiles_005fput_005f1);
     _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty followedList}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\r\n");
         out.write("<table id=\"table-01\" border align=\"left\">\r\n");
-        out.write("<tr>\r\n");
-        out.write("<td>\r\n");
-        out.write("まだだれにもフォローされていません\r\n");
-        out.write("</td>\r\n");
-        out.write("</tr>\r\n");
-        out.write("\r\n");
+        out.write("<tr><td>まだだれにもフォローされていません</td></tr>\r\n");
         out.write("</table>\r\n");
         int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -226,14 +241,14 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     return false;
   }
 
-  private boolean _jspx_meth_c_005fif_005f1(PageContext _jspx_page_context)
+  private boolean _jspx_meth_c_005fif_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_tiles_005fput_005f1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  c:if
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f1 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f1.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f1.setParent(null);
+    _jspx_th_c_005fif_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_tiles_005fput_005f1);
     _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!empty followedList}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -276,13 +291,12 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
         do {
           out.write("\r\n");
           out.write("\r\n");
-          out.write("<tr>\r\n");
-          out.write("<td>\r\n");
+          out.write("<tr><td>\r\n");
           if (_jspx_meth_s_005flink_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
           out.write("\r\n");
           out.write("<br>\r\n");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${followed.newMur}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ followed.newMur }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("\r\n");
           out.write("<font color=#808080 size=\"2\">");
           if (_jspx_meth_fmt_005fformatDate_005f0(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
@@ -404,7 +418,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f2 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mine==mydata.userid}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ mine == mydata.userid }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -484,7 +498,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f3 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f1);
-    _jspx_th_c_005fif_005f3.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fc_userid[i]==followed.userid}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f3.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ fc_userid[i] == followed.userid }", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f3 = _jspx_th_c_005fif_005f3.doStartTag();
     if (_jspx_eval_c_005fif_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -534,7 +548,7 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f4 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f2);
-    _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!(check == 1)}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!( check == 1 )}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -610,171 +624,6 @@ public final class followedpage_jsp extends org.apache.jasper.runtime.HttpJspBas
       return true;
     }
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flink_005f2(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:link
-    org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f2 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
-    _jspx_th_s_005flink_005f2.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flink_005f2.setParent(null);
-    _jspx_th_s_005flink_005f2.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("followpage/${mydata.userid }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    _jspx_th_s_005flink_005f2.setStyle("text-decoration: none");
-    int _jspx_eval_s_005flink_005f2 = _jspx_th_s_005flink_005f2.doStartTag();
-    if (_jspx_eval_s_005flink_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_s_005flink_005f2 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_s_005flink_005f2.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_s_005flink_005f2.doInitBody();
-      }
-      do {
-        out.write("フォロー<br>している");
-        int evalDoAfterBody = _jspx_th_s_005flink_005f2.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_s_005flink_005f2 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.popBody();
-      }
-    }
-    if (_jspx_th_s_005flink_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f2);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f2);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flink_005f3(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:link
-    org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f3 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
-    _jspx_th_s_005flink_005f3.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flink_005f3.setParent(null);
-    _jspx_th_s_005flink_005f3.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("followedlist/${mydata.userid }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    _jspx_th_s_005flink_005f3.setStyle("text-decoration: none");
-    int _jspx_eval_s_005flink_005f3 = _jspx_th_s_005flink_005f3.doStartTag();
-    if (_jspx_eval_s_005flink_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_s_005flink_005f3 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_s_005flink_005f3.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_s_005flink_005f3.doInitBody();
-      }
-      do {
-        out.write("フォロー<br>されている");
-        int evalDoAfterBody = _jspx_th_s_005flink_005f3.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_s_005flink_005f3 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.popBody();
-      }
-    }
-    if (_jspx_th_s_005flink_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f3);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f3);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_005flink_005f4(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:link
-    org.seasar.struts.taglib.S2LinkTag _jspx_th_s_005flink_005f4 = (org.seasar.struts.taglib.S2LinkTag) _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.get(org.seasar.struts.taglib.S2LinkTag.class);
-    _jspx_th_s_005flink_005f4.setPageContext(_jspx_page_context);
-    _jspx_th_s_005flink_005f4.setParent(null);
-    _jspx_th_s_005flink_005f4.setHref((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("/main/showdata/${mydata.usernick}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-    _jspx_th_s_005flink_005f4.setStyle("text-decoration: none");
-    int _jspx_eval_s_005flink_005f4 = _jspx_th_s_005flink_005f4.doStartTag();
-    if (_jspx_eval_s_005flink_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      if (_jspx_eval_s_005flink_005f4 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.pushBody();
-        _jspx_th_s_005flink_005f4.setBodyContent((javax.servlet.jsp.tagext.BodyContent) out);
-        _jspx_th_s_005flink_005f4.doInitBody();
-      }
-      do {
-        out.write('投');
-        out.write('稿');
-        out.write('数');
-        int evalDoAfterBody = _jspx_th_s_005flink_005f4.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-      if (_jspx_eval_s_005flink_005f4 != javax.servlet.jsp.tagext.Tag.EVAL_BODY_INCLUDE) {
-        out = _jspx_page_context.popBody();
-      }
-    }
-    if (_jspx_th_s_005flink_005f4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f4);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fs_005flink_0026_005fstyle_005fhref.reuse(_jspx_th_s_005flink_005f4);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fif_005f5(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f5 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_005fif_005f5.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f5.setParent(null);
-    _jspx_th_c_005fif_005f5.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${hasPrev}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
-    int _jspx_eval_c_005fif_005f5 = _jspx_th_c_005fif_005f5.doStartTag();
-    if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write("\r\n");
-        out.write("\t<a href=\"?page=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${page-1 }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-        out.write("\">&lt;前へ</a>\r\n");
-        int evalDoAfterBody = _jspx_th_c_005fif_005f5.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_005fif_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f5);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f5);
-    return false;
-  }
-
-  private boolean _jspx_meth_c_005fif_005f6(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  c:if
-    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f6 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
-    _jspx_th_c_005fif_005f6.setPageContext(_jspx_page_context);
-    _jspx_th_c_005fif_005f6.setParent(null);
-    _jspx_th_c_005fif_005f6.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${hasNext}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
-    int _jspx_eval_c_005fif_005f6 = _jspx_th_c_005fif_005f6.doStartTag();
-    if (_jspx_eval_c_005fif_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
-      do {
-        out.write("\r\n");
-        out.write("\t<a href=\"?page=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${page+1 }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-        out.write("\">次へ&gt;</a>\r\n");
-        int evalDoAfterBody = _jspx_th_c_005fif_005f6.doAfterBody();
-        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
-          break;
-      } while (true);
-    }
-    if (_jspx_th_c_005fif_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f6);
-      return true;
-    }
-    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f6);
     return false;
   }
 }

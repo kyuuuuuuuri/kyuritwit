@@ -32,9 +32,6 @@ public class MainAction extends SuperAction{
 
 	public int fFlag=0;
 
-	//自分のつぶやきかどうかを検証する変数
-	public int mine=0;
-
 	@Execute(validator = false)
 	public String index(){
 		return "main";

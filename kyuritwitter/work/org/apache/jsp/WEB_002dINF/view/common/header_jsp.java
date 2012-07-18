@@ -73,21 +73,17 @@ static {
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n");
-      out.write("<title>ヘッダーページ</title>\r\n");
-      out.write("<style type=\"text/css\">\r\n");
-      out.write("body {\r\n");
-      out.write("background:#C0DEED;\r\n");
-      out.write("}\r\n");
+      out.write("<link rel=\"Stylesheet\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/css/cssfile.css\" />\r\n");
       out.write("\r\n");
-      out.write("</style>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<font size=\"6\">\r\n");
       if (_jspx_meth_s_005flink_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
-      out.write("</font>　　　　　　　\r\n");
+      out.write("</font>\r\n");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
       out.write("\r\n");

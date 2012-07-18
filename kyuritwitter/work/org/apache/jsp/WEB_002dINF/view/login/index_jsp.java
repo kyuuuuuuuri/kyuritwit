@@ -7,12 +7,6 @@ import javax.servlet.jsp.*;
 public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
-static private org.apache.jasper.runtime.ProtectedFunctionMapper _jspx_fnmap_0;
-
-static {
-  _jspx_fnmap_0= org.apache.jasper.runtime.ProtectedFunctionMapper.getMapForFunction("f:url", org.seasar.struts.taglib.S2Functions.class, "url", new Class[] {java.lang.String.class});
-}
-
   private static java.util.List _jspx_dependants;
 
   static {
@@ -83,37 +77,29 @@ static {
       out.write("<html>\r\n");
       out.write("<head>\r\n");
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n");
-      out.write("<script type=\"text/javascript\" src=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${f:url('/js/jquery.js')}", java.lang.String.class, (PageContext)_jspx_page_context, _jspx_fnmap_0, false));
-      out.write("\"></script>\r\n");
       out.write("\r\n");
+      out.write("<link rel=\"Stylesheet\" href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+      out.write("/css/style.css\" />\r\n");
       out.write("<link rel=\"Stylesheet\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/css/cssfile.css\" />\r\n");
       out.write("<link rel=\"Stylesheet\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("/css/loginStyle.css\" />\r\n");
-      out.write("<link rel=\"Stylesheet\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/css/style.css\" />\r\n");
       out.write("\r\n");
-      out.write("<title>loginページ</title>\r\n");
       if (_jspx_meth_tiles_005finsert_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("<title>login</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<div id=\"baroon\">\r\n");
       out.write("<div id=\"balloon-p1\"></div>\r\n");
       out.write("\t<div id=\"balloon-p2\"></div>\r\n");
       out.write("\t<div id=\"balloon-c\">\r\n");
-      out.write("\r\n");
-      out.write("<!-- <span id=\"message\"></span><br />\r\n");
-      out.write("<input type=\"button\" value=\"hello\"\r\n");
-      out.write("    onclick=\"$('#message').load('hello',{'greeting':'Hello'});\"/>\r\n");
-      out.write("    -->\r\n");
-      out.write("\r\n");
       out.write("<h2>ログイン</h2>\r\n");
       out.write("<br>\r\n");
       if (_jspx_meth_s_005fform_005f0(_jspx_page_context))
@@ -127,7 +113,7 @@ static {
       out.write("</div>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
-      out.write("</html>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

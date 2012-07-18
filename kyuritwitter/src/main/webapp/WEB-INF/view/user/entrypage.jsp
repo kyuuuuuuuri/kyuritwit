@@ -1,11 +1,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ユーザ登録</title>
-<tiles:insert page="/WEB-INF/view/common/header.jsp"  />
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
-<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/cssfile.css" />
+<link rel="Stylesheet" href="${pageContext.request.contextPath}/css/loginStyle.css" />
+
+<tiles:insert page="/WEB-INF/view/common/header.jsp"  />
+
+<title>entry</title>
 </head>
 <body>
 <div id="baroon">
@@ -26,5 +29,3 @@ ${tuser.userNick}
 </div>
 </body>
 </html>
-
-

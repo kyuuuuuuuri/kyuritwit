@@ -68,11 +68,7 @@
     <initMethod name="addCustomizer">
       <arg>traceCustomizer</arg>
     </initMethod>
-    <initMethod name="addCustomizer">
-      <arg>
-        <component class="org.seasar.framework.container.customizer.TxAttributeCustomizer"/>
-      </arg>
-    </initMethod>
+
     <initMethod name="addCustomizer">
       <arg>
         <component class="org.seasar.struts.customizer.ActionCustomizer"/>

@@ -1,12 +1,17 @@
 eclipse.preferences.version=1
 encoding//src/main/java/root/action/mainpage.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/common/footer.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/common/header.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/common/menu.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/error/error.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/followlist/followedpage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/followlist/followpage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/login/index.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/main/index.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/main/mainpage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/main/window.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/search/searchResult.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/search/searchpage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/user/entrypage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/view/user/index.jsp=UTF-8
 encoding/<project>=UTF-8

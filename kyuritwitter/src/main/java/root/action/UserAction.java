@@ -20,7 +20,6 @@ public class UserAction extends SuperAction{
 
     private final String userIndexJsp = "userInput.jsp";
 
-    public int mine=0;
 
     @Execute(validator=false)
     public String index() {
